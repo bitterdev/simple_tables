@@ -1,0 +1,3 @@
+# Simple Tables
+
+Simple Tables is a powerful yet easy-to-use add-on for Concrete CMS that allows you to effortlessly create and manage tables within your website content. The add-on features an intuitive editor, similar to Excel, where you can quickly add, edit, and remove rows and columns without any coding knowledge. Once you've entered your data, Simple Tables automatically renders it as a clean, responsive HTML table on the frontend. Whether you're displaying data comparisons, schedules, or any other structured content, this add-on ensures your tables are visually appealing and responsive across all devices. It's the ideal solution for anyone needing a straightforward way to present tabular information.

@@ -6,26 +6,30 @@ defined("C5_EXECUTE") or die("Access Denied.");
 
 $entries = $entries ?? [];
 
-echo '<table class="table table-bordered">';
-echo '<thead>';
-echo '<tr>';
+?>
 
-if (count($entries) > 0) {
-    foreach ($entries[0] as $key => $value) {
-        echo '<th>' . htmlspecialchars($key) . '</th>';
-    }
-}
-echo '</tr>';
-echo '</thead>';
-echo '<tbody>';
+<?php if (count($entries) > 0) { ?>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <?php foreach ($entries[0] as $value) { ?>
+                <th>
+                    <?php echo $value["key"] ?? ''; ?>
+                </th>
+            <?php } ?>
+        </tr>
+        </thead>
 
-foreach ($entries as $entry) {
-    echo '<tr>';
-    foreach ($entry as $value) {
-        echo '<td>' . htmlspecialchars($value) . '</td>';
-    }
-    echo '</tr>';
-}
-
-echo '</tbody>';
-echo '</table>';
+        <tbody>
+        <?php foreach ($entries as $entry) { ?>
+            <tr>
+                <?php foreach ($entry as $value) { ?>
+                    <td>
+                        <?php echo $value["value"] ?? ''; ?>
+                    </td>
+                <?php } ?>
+            </tr>
+        <?php } ?>
+        </tbody>
+    </table>
+<?php } ?>
