@@ -1,5 +1,10 @@
 {
   "name": "bitter/simple_tables",
   "type": "concrete5-package",
-  "description": "Simple Tables is a Concrete CMS add-on for creating responsive tables with an Excel-like editor—fast, simple, and code-free."
+  "description": "Simple Tables is a Concrete CMS add-on for creating responsive tables with an Excel-like editor—fast, simple, and code-free.",
+  "autoload": {
+    "psr-4": {
+      "Bitter\\SimpleTables\\": "src/Bitter/SimpleTables"
+    }
+  }
 }
