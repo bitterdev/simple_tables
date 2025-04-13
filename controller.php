@@ -12,7 +12,7 @@ class Controller extends Package
     protected $appVersionRequired = '9.0.0';
     protected $pkgAutoloaderRegistries = [
         'src/Bitter/SimpleTables' => 'Bitter\SimpleTables',
-        ];
+    ];
 
     public function getPackageDescription(): string
     {
@@ -23,6 +23,7 @@ class Controller extends Package
     {
         return t('Simple Tables');
     }
+
     public function on_start()
     {
         /** @var ServiceProvider $serviceProvider */
