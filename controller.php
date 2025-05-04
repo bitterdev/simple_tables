@@ -8,7 +8,7 @@ use Concrete\Core\Package\Package;
 class Controller extends Package
 {
     protected string $pkgHandle = 'simple_tables';
-    protected string $pkgVersion = '0.0.4';
+    protected string $pkgVersion = '0.0.5';
     protected $appVersionRequired = '9.0.0';
     protected $pkgAutoloaderRegistries = [
         'src/Bitter/SimpleTables' => 'Bitter\SimpleTables',

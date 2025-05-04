@@ -25,6 +25,9 @@ echo $form->hidden("entries", json_encode($entries));
 
 /** @noinspection PhpUnhandledExceptionInspection */
 View::element("dashboard/help_blocktypes", [], "simple_tables");
+
+/** @noinspection PhpUnhandledExceptionInspection */
+View::element("dashboard/did_you_know", [], "simple_tables");
 ?>
 
 <p class="alert alert-info">
